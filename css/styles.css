@@ -1,0 +1,35 @@
+:root {
+    --font-body: "Catamaran", sans-serif;
+    --bg-default: #fcfcfc;
+    --bg-blue: #0b5ed7;
+}
+
+body {
+    background-color: var(--bg-default);
+    font-family: var(--font-body);
+}
+
+.color-blue {
+    color: var(--bg-blue);
+}
+
+.bg-blue {
+    background-color: var(--bg-blue);
+}
+
+.logo {
+    font-size: 30px;
+    color: var(--bg-blue)
+}
+
+.logo:hover {
+    color: var(--bg-blue);
+}
+
+.nav-link {
+    font-weight: 600;
+}
+
+.nav-link:hover {
+    color: var(--bg-blue);
+}

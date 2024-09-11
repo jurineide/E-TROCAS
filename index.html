@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- link na aba no browser -->
+    <link rel="shortcut icon" href="./images/rotate-solid.svg" type="image/x-icon">
+
+    <title>E-Trocas</title>
+
+    <!-- chamada do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- chamada do BS Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+    <!-- chamada da CSS do BS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Chamda da minha CSS -->
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+
+    <!----------------------- menu de navegação ----------------------->
+    <nav class="navbar navbar-expand-lg my-4">
+        <div class="container">
+            <a class="navbar-brand logo" href="#"><i class="bi bi-arrow-repeat"></i> E-Trocas</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#roupas-titulo">Roupas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#brinquedos-titulo">Brinquedos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Modal do login -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Usuários - Login</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form name="login" id="login" method="get" action="./admin.html">
+                        <div class="my-3">
+                            <label for="user" class="form-label">Usuário</label>
+                            <input type="text" id="user" name="user" class="form-control"
+                            placeholder="Ex: user123456"
+                            minlength="10" maxlength="20" required>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--------------------- fim menu de navegação --------------------->
+    <main class="container mb-4">
+        <!---------------------   hero da página   --------------------->
+        <!-- início do grid - preciso da row para ativar o grid -->
+        <section class="row border rounded py-5 d-flex align-items-center">
+
+            <div class="col-md-6 text-center my-3">
+                <img src="./images/app.svg" alt="ilustração do aplicativo E-Trocas">
+            </div>
+
+            <div class="col-md-6 text-center my-3">
+                <h2 class="color-blue mb-3">Olá, nós somos o E-Trocas, a maior plataforma de trocas da Internet</h2>
+                <p class="lead mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum animi dicta
+                    blanditiis?</p>
+
+                <a href="" class="btn btn-primary btn-lg">Baixar nosso aplicativo <i
+                        class="bi bi-cloud-arrow-down ms-1"></i></a>
+            </div>
+        </section>
+        <!--------------------- fim hero da página --------------------->
+
+        <!--------------------------   cards   ------------------------->
+        <section class="my-4">
+            <h2 class="color-blue" id="roupas-titulo">Roupas</h2>
+
+            <!-- grid cards -->
+            <div class="row">
+
+                <!--   1o. card   -->
+                <div class="col-md-4 my-2">
+                    <div class="card">
+                        <img src="./images/roupas/roupa1.jpeg" class="card-img-top" alt="Foto da roupa 01">
+                        <div class="card-body">
+                            <h5 class="card-title color-blue">Vestido Azul</h5>
+                            <div class="d-flex justify-content-between">
+                                <p>Tamanho: G</p>
+                                <p>Cor: Azul</p>
+                            </div>
+                            <h5 class="text-danger">Usuário: Telma Lins</h5>
+                            <div class="d-grid">
+                                <a href="#" class="btn btn-outline-primary">Entrar em contato</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- fim 1o. card -->
+
+                <!--   2o. card   -->
+                <div class="col-md-4 my-2">
+                    <div class="card">
+                        <img src="./images/roupas/roupa2.jpeg" class="card-img-top" alt="Foto da roupa 01">
+                        <div class="card-body">
+                            <h5 class="card-title color-blue">Baby Body</h5>
+                            <div class="d-flex justify-content-between">
+                                <p>Tamanho: G</p>
+                                <p>Cor: Cinza</p>
+                            </div>
+                            <h5 class="text-danger">Usuário: Tânia Filha</h5>
+                            <div class="d-grid">
+                                <a href="#" class="btn btn-outline-primary">Entrar em contato</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- fim 2o. card -->
+
+                <!--   3o. card   -->
+                <div class="col-md-4 my-2">
+                    <div class="card">
+                        <img src="./images/roupas/roupa3.jpeg" class="card-img-top" alt="Foto da roupa 01">
+                        <div class="card-body">
+                            <h5 class="card-title color-blue">Vestido</h5>
+                            <div class="d-flex justify-content-between">
+                                <p>Tamanho: G</p>
+                                <p>Cor: Branco/Cinza</p>
+                            </div>
+                            <h5 class="text-danger">Usuário: Wilma Dias</h5>
+                            <div class="d-grid">
+                                <a href="#" class="btn btn-outline-primary">Entrar em contato</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- fim 3o. card -->
+            </div>
+            <!-- fim grid cards roupas -->
+
+
+            <!-- grid de brinquedos -->
+            <h2 class="color-blue my-4" id="brinquedos-titulo">Brinquedos</h2>
+            <div class="row" id="brinquedos"></div>
+        </section>
+    </main>
+    <!-------------------------- fim cards ------------------------->
+
+    <footer class="text-center bg-blue py-5 text-light">
+        <h4>E-Trocas - Todos os direitos reservados - 2024</h4>
+        <div class="social mt-4">
+            <a href=""><i class="bi bi-twitter-x text-light fs-2 me-4"></i></a>
+            <a href=""><i class="bi bi-youtube text-light fs-2 me-4"></i></a>
+            <a href=""><i class="bi bi-instagram text-light fs-2 me-4"></i></a>
+            <a href=""><i class="bi bi-discord text-light fs-2 me-4"></i></a>
+        </div>
+    </footer>
+
+
+    <!-- chamada do JS do BS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+
+    <!-- Chamada do meu JS -->
+    <!-- <script src="./js/base.js"></script> -->
+    <script src="./js/brinquedos.js"></script>
+    <script src="./js/montarFront.js"></script>
+
+</body>
+
+</html>
